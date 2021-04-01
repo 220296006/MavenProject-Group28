@@ -11,7 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.Assert.*;
+
 
 
 /**
@@ -34,11 +34,13 @@ public class StudentTest {
     // Test for Object Equality
     @Test
     public void testEquality(){
+        fail("The test will fail");
         assertSame(student1 , student2);
     }
     // Test for Object Identity
     @Test
     public void testIdentity(){
+        fail("The test will fail");
         assertEquals(student1 , student2); 
     }
     /**
