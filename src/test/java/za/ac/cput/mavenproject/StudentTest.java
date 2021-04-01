@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author user
+ * @author 220296006
  */
 public class StudentTest {
     
@@ -37,9 +37,32 @@ public class StudentTest {
     public void tearDown() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    /**
+     * Test of Name method, of class Student.
+     */
+    @Test
+    public void testName() {
+        System.out.println("Name");
+        Student instance = null;
+        String expResult = "";
+        String result = instance.Name();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of Grade method, of class Student.
+     */
+    @Test
+    public void testGrade() {
+        System.out.println("Grade");
+        Student instance = null;
+        int expResult = 0;
+        int result = instance.Grade();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+    
 }
