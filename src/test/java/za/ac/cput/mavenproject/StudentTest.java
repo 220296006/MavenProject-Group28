@@ -11,6 +11,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
 /**
  *
@@ -18,25 +19,27 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class StudentTest {
     
-    public StudentTest() {
-    }
-    
-    @BeforeAll
-    public static void setUpClass() {
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
+     private Student student1;
+     private Student student2;
+     private Student student3;
+     
     @BeforeEach
-    public void setUp() {
+    public void setUp(){
+        
+       student1  = new Student();
+       student2  = new Student();
+       student3 = student1;
     }
-    
-    @AfterEach
-    public void tearDown() {
+    // Test for Object Equality
+    @Test
+    public void testEquality(){
+        assertSame(student1 , student2);
     }
-
+    // Test for Object Identity
+    @Test
+    public void testIdentity(){
+        assertEquals(student1 , student2); 
+    }
     /**
      * Test of Name method, of class Student.
      */
@@ -55,6 +58,7 @@ public class StudentTest {
      * Test of Grade method, of class Student.
      */
     @Test
+    @Ignore
     public void testGrade() {
         System.out.println("Grade");
         Student instance = null;
