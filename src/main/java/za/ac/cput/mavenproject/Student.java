@@ -9,6 +9,9 @@ public class Student {
     private String _name;
     private int _grade;
     
+    public Student(){
+    }
+    
     public Student(String name, int grade) {
         this._grade = grade;
         this._name = name;

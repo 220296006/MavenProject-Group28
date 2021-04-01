@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.Assert.*;
 
+
 /**
  *
  * @author 220296006
@@ -58,7 +59,6 @@ public class StudentTest {
      * Test of Grade method, of class Student.
      */
     @Test
-    @Ignore
     public void testGrade() {
         System.out.println("Grade");
         Student instance = null;

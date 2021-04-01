@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author user
+ * @author 220296006
  */
 public class ArraysOfObjectsTest {
     
