@@ -8,6 +8,7 @@ package za.ac.cput.mavenproject;
 /**
  *
  * @author Lenovo
+ * 216250811
  */
 public class Multiplication {
     private int number1;
